@@ -1,21 +1,74 @@
+@font-face {
+  font-family: 'Manrope Bold';
+  src: local('Manrope Bold'), url('../../fonts/manrope/Manrope-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Manrope ExtraBold';
+  src: local('Manrope ExtraBold'), url('../../fonts/manrope/Manrope-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Manrope Light';
+  src: local('Manrope Light'), url('../../fonts/manrope/Manrope-Light.otf');
+}
+
+@font-face {
+  font-family: 'Manrope Medium';
+  src: local('Manrope Medium'), url('../../fonts/manrope/Manrope-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Manrope Regular';
+  src: local('Manrope Regular'), url('../../fonts/manrope/Manrope-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Manrope SemiBold';
+  src: local('Manrope SemiBold'), url('../../fonts/manrope/Manrope-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'MonumentExtended Regular';
+  src: local('MonumentExtended Regular'), url('../../fonts/monumentextended/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'MonumentExtended UltraBold';
+  src: local('MonumentExtended UltraBold'), url('../../fonts/monumentextended/MonumentExtended-UltraBold.otf');
+}
+
+
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Manrope Regular', sans-serif;
+  /* cursor: none; */
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+  /* cursor: none; */
+  overflow-x: hidden;
 }
+
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
-header,
-main,
 menu,
 nav,
 section,
@@ -69,7 +122,9 @@ mark {
   color: #000;
 }
 small {
-  font-size: 80%;
+  font-family: 'Manrope Regular', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 sub,
 sup {
@@ -120,42 +175,8 @@ button,
 input {
   overflow: visible;
 }
-button,
-select {
-  text-transform: none;
-}
-[type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
+
+
 textarea {
   overflow: auto;
 }
@@ -184,10 +205,12 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+
+
 html {
-  font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  position: relative;
 }
 * {
   box-sizing: inherit;
@@ -199,15 +222,19 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
+  color: white;
+  background-color: #141414;
+  font-family: 'Manrope Regular', sans-serif;
+  font-weight: 400;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 img {
   max-width: 100%;
@@ -230,12 +257,11 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'MonumentExtended UltraBold', sans-serif;
+  font-weight: 800;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
+  font-size: 200px;
+  line-height: 1.2;
 }
 h2 {
   margin-left: 0;
@@ -247,11 +273,10 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'Manrope Bold', sans-serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 65px;
   line-height: 1.1;
 }
 h3 {
@@ -264,11 +289,10 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'Manrope Bold', sans-serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 49px;
   line-height: 1.1;
 }
 h4 {
@@ -281,11 +305,10 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'Manrope Bold', sans-serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 37px;
   line-height: 1.1;
 }
 h5 {
@@ -298,11 +321,10 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'Manrope Bold', sans-serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
+  font-size: 28px;
   line-height: 1.1;
 }
 h6 {
@@ -315,12 +337,11 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: 'Manrope Bold', sans-serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
+  font-size: 20px;
+  line-height: 1.3;
 }
 hgroup {
   margin-left: 0;
@@ -385,6 +406,11 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-family: 'Manrope Medium', sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  line-height: 1.7;
 }
 figure {
   margin-left: 0;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="192px" viewBox="0 0 268 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-100.000000, -5805.000000)" stroke="#FFFFFF" stroke-width="4">
+            <g id="Group-3" transform="translate(101.000000, 5807.000000)">
+                <circle id="Oval" cx="132" cy="94" r="94"></circle>
+                <path d="M54.4838291,40.0101042 C80.7813469,37.4028048 106.620071,36.0991551 132,36.0991551 C157.379929,36.0991551 182.453992,37.4028048 207.222186,40.0101042" id="Path-5"></path>
+                <path d="M0,92 L266,94.1987367" id="Path-6" stroke-dasharray="4"></path>
+                <path d="M51.6061221,143.765533 C78.620792,146.795522 105.418751,148.310516 132,148.310516 C158.581249,148.310516 185.018023,146.795522 211.310324,143.765533" id="Path-7"></path>
+                <path d="M109.890364,3.37484418 C91.2967879,32.0370819 82,61.5788005 82,92 C82,122.4212 91.2967879,153.428743 109.890364,185.022629" id="Path-8"></path>
+                <path d="M146,3.02262915 C170.608831,32.7544308 182.913247,63.0213901 182.913247,93.8235071 C182.913247,124.625624 170.608831,155.025331 146,185.022629" id="Path-9"></path>
+                <path d="M130.853008,0 L130.853008,188" id="Path-10"></path>
+            </g>
+        </g>
+    </g>
+</svg>
